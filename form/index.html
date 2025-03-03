@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Validacija Forme</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="container">
+      <form id="userForm" class="d-grid gap-3" novalidate>
+        <h2>Popunite formu</h2>
+        <label for="ime" class="form-label">Ime: </label>
+        <input type="text" class="form-control" id="ime" required />
+
+        <label for="prezime" class="form-label">Prezime: </label>
+        <input type="text" class="form-control" id="prezime" required />
+
+        <label for="pol" class="form-label">Pol: </label>
+        <select class="form-control" id="pol">
+          <option value="">Izaberite pol</option>
+          <option value="muški">Muški</option>
+          <option value="ženski">Ženski</option>
+        </select>
+
+        <label for="godinaRodjenja" class="form-label">Godina rođenja:</label>
+        <select class="form-control" id="godinaRodjenja"></select>
+
+        <label for="adresa" class="form-label">Adresa:</label>
+        <textarea class="form-control" id="adresa" rows="3" required></textarea>
+
+        <label for="grad" class="form-label">Grad:</label>
+        <input type="text" class="form-control" id="grad" required />
+
+        <input type="checkbox" class="form-check-input" id="saglasnost" />
+        <label class="form-check-label" for="saglasnost"
+          >Prihvatam uslove korišćenja</label
+        >
+
+        <button type="submit" class="btn btn-primary">Pošalji</button>
+      </form>
+      <div id="susscesMessage" class="alert alert-success mt-4 d-none"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
