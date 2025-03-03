@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    .slider {
+      width: 80%;
+      max-width: 800px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+  <body>
+    <div class="slider">
+      <div>
+        <img src="slide1.png" alt="slide1" />
+      </div>
+      <div>
+        <img src="slide2.png" alt="slide2" />
+      </div>
+      <div>
+        <img src="slide3.png" alt="slide3" />
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="slick/slick.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
